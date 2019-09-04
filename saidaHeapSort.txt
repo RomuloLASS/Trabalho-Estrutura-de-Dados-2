@@ -1,0 +1,3 @@
+Numero de comparações: 40
+Cópias de registro: 41
+Tempo de execução: 0 ms

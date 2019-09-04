@@ -1,0 +1,2 @@
+Numero de comparações: 27
+Tempo de execução: 0 ms
