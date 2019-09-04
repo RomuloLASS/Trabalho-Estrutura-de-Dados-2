@@ -36,9 +36,9 @@ public class Trabalho1 {
                 linha = leitura.readLine(); //lê a proxima linha
             }
             while (j < qtdOrd ) { //Gera o vetor que será ordenado/ inserido na tabela hash
-                //int aleatorio = r.nextInt(50); //Gera um valor aleatório entre 0 e a quantidade de registros - 1
-                //System.out.println(aleatorio);
-                vetor[j] = rw[r.nextInt(50)]; //insere no vetor o valor aleatorio corresponde no vetor que contem todos os registros criados
+                int aleatorio = r.nextInt(50); //Gera um valor aleatório entre 0 e a quantidade de registros - 1
+//                /System.out.println(aleatorio);
+                vetor[j] = rw[aleatorio]; //insere no vetor o valor aleatorio corresponde no vetor que contem todos os registros criados
                 //System.out.println(vetor[j].id);
                 j++; // incrementa a variavel de controle
             }
@@ -95,12 +95,10 @@ public class Trabalho1 {
             //SondagemLinear hash = new SondagemLinear(vetor.length);
             EncadSep l1 = new EncadSep(vetor);
             for(int i=0;i<vetor.length;i++){
-                int a = vetor[i].id;
-                //hash.insere(a);
                 l1.insere(vetor[i]);
             }	
             //hash.imprimeTabelaHash();
-            l1.Imprime(6);
+            l1.Imprime(0);
 
         //Faz o tratamento de colisoes usando a sondagem quadratica
 //        SondagemQuadratica hash = new SondagemQuadratica(vetor.length);

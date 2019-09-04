@@ -65,20 +65,28 @@ public class EncadSep {
     }
 
     protected void Imprime(int i) {
-        if (i < Lista.length) {
+        while(i<Lista.length){
             System.out.print(Lista[i] + "   ");
             if (ListaEncad[i] != null) {
                 ImprimeEncad(ListaEncad[i]);
             }
             System.out.println("");
-            Imprime(i++);
+            i++;
         }
+//        if (i < Lista.length) {
+//            System.out.print(Lista[i] + "   ");
+//            if (ListaEncad[i] != null) {
+//                ImprimeEncad(ListaEncad[i]);
+//            }
+//            System.out.println("");
+//            this.Imprime(i++);
+//        } 
     }
 
     protected void ImprimeEncad(NoES n) {
         System.out.print(n.getRegistro().getId() + "    ");
         if (n.getProx() != null) {
-            ImprimeEncad(n.getProx());
+            this.ImprimeEncad(n.getProx());
         }
     }
 }
