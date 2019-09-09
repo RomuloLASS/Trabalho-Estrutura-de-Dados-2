@@ -7,6 +7,7 @@ import java.io.IOException;
 import static java.nio.file.Files.lines;
 import java.util.Random;
 import java.util.Scanner;
+import javax.xml.ws.Endpoint;
 
 public class Trabalho1 {
 
@@ -16,7 +17,7 @@ public class Trabalho1 {
         
         int i = 0, j = 0; //Inicializa as váriaveis de controle com 0
         Random r = new Random(); //Classe para gerar numeros aleatórios
-        Registro[] rw = new Registro[68]; // Vetor contendo todos os registro lidos do documento .csv
+        Registro[] rw = new Registro[100000]; // Vetor contendo todos os registro lidos do documento .csv
         BufferedReader ler = new BufferedReader(new FileReader("entrada.txt")); // Arquivo de entrada contendo a quantidade de registros a ser ordenada/ inserida na tabela hash
         String linhaQtd = ler.readLine(); //Variavel para ler o que tem no "entrada.txt"
         int qtdOrd = Integer.parseInt(linhaQtd); //Conversão de String para inteiro do valor lido do arquivo "entrada.txt"
@@ -27,12 +28,33 @@ public class Trabalho1 {
             while (linha != null) {
 //                        TRATAMENTO DE ENTRADA (,)
                 String[] aCampos = linha.split(VIRGULA); //Vetor que armazena temporariamente cada campo lido do .csv
-                if (aCampos.length == 6) { //Se tem tamanho 5 é porque o Registro está completo
+                
+                
+                String[] aCamposTEMP = linha.split(VIRGULA,6); //Vetor Temporario para resolver o problema da virgula no comentario
+                if (aCampos.length > 6) {
+                    for(int x=3; x<aCampos.length-2; x++){
+                        aCampos[3] = aCampos[3] + aCampos[x];//Concatena todos os campos do comentario
+                    }
+                    aCampos[4] = aCampos[aCampos.length-2];//Coloca o ID do jogo na posição certa do vetor
+                    aCampos[5] = aCampos[aCampos.length-1];//Coloca o Nome do jogo na posição certa do vetor
+                    
+                    for (int x = 0; x < 6; x++) {
+                        aCamposTEMP[x] = aCampos[x];//Insere os campos num Vetor temporario
+                    }
+                    
+                    Registro r1 = new Registro(Integer.parseInt(aCamposTEMP[0]), aCamposTEMP[1], Float.parseFloat(aCamposTEMP[2]), aCamposTEMP[3], aCamposTEMP[4], aCamposTEMP[5]); //Cria um novo registro com os campos lidos do .csv
+                    rw[i] = r1; // adiciona o novo registro criado no vetor contendo todos os registros
+                    i++; //incrementa a variavel de controle
+                    
+                }
+
+                else if (aCampos.length == 6) { //Se tem tamanho 5 é porque o Registro está completo
                     Registro r1 = new Registro(Integer.parseInt(aCampos[0]), aCampos[1], Float.parseFloat(aCampos[2]), aCampos[3], aCampos[4], aCampos[5]); //Cria um novo registro com os campos lidos do .csv
                     rw[i] = r1; // adiciona o novo registro criado no vetor contendo todos os registros
                     //System.out.println(rw[i].id);
                     i++; //incrementa a variavel de controle
                 }
+
                 linha = leitura.readLine(); //lê a proxima linha
             }
             while (j < qtdOrd ) { //Gera o vetor que será ordenado/ inserido na tabela hash
@@ -92,14 +114,6 @@ public class Trabalho1 {
 //            }	
 //            hash.imprimeTabelaHash();
 
-            //SondagemLinear hash = new SondagemLinear(vetor.length);
-            EncadSep l1 = new EncadSep(vetor);
-            for(int i=0;i<vetor.length;i++){
-                l1.insere(vetor[i]);
-            }	
-            //hash.imprimeTabelaHash();
-            l1.Imprime(0);
-
         //Faz o tratamento de colisoes usando a sondagem quadratica
 //        SondagemQuadratica hash = new SondagemQuadratica(vetor.length);
 //        for (int i = 0; i < vetor.length; i++) {
@@ -107,8 +121,13 @@ public class Trabalho1 {
 //            hash.insere(a);
 //        }
 //        hash.imprimeTabelaHash();
-
-
+//
+//            //Encadeamento Separado
+//            EncadSep l1 = new EncadSep(vetor);
+//            for(int i=0;i<vetor.length;i++){
+//                l1.insere(vetor[i]);
+//            }
+//            l1.Imprime();
         
     }
 }
