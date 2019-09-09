@@ -64,7 +64,8 @@ public class EncadSep {
         comp++;
     }
 
-    protected void Imprime(int i) {
+    protected void Imprime() {
+        int i=0;
         while(i<Lista.length){
             System.out.print(Lista[i] + "   ");
             if (ListaEncad[i] != null) {
