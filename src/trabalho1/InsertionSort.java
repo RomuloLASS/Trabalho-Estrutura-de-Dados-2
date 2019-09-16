@@ -55,7 +55,7 @@ public class InsertionSort {
         Registro aux[] = new Registro[vetor.length];
         for (i = 1; i < vetor.length; i++) {
             chave = vetor[i].id;
-            copia++;
+            //copia++;
             for (j = i - 1; (j >= 0) && (vetor[j].id > chave); j--) {
                 aux[j] = vetor[j+1];
                 vetor[j+1] = vetor[j];
@@ -65,7 +65,7 @@ public class InsertionSort {
             }
             comp++;
             vetor[j + 1].id = chave; //EIS O PROBLEMA DESSA DISGRAÇA
-            copia++;
+            //copia++;
         }
 
     }

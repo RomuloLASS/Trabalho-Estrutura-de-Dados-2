@@ -27,9 +27,7 @@ public class Trabalho1 {
             String linha = leitura.readLine(); //Variavel que lê a primeira linha do arquivo .csv
             while (linha != null) {
 //                        TRATAMENTO DE ENTRADA (,)
-                String[] aCampos = linha.split(VIRGULA); //Vetor que armazena temporariamente cada campo lido do .csv
-                
-                
+                String[] aCampos = linha.split(VIRGULA); //Vetor que armazena temporariamente cada campo lido do .csv          
                 String[] aCamposTEMP = linha.split(VIRGULA,6); //Vetor Temporario para resolver o problema da virgula no comentario
                 if (aCampos.length > 6) {
                     for(int x=3; x<aCampos.length-2; x++){
@@ -41,27 +39,21 @@ public class Trabalho1 {
                     for (int x = 0; x < 6; x++) {
                         aCamposTEMP[x] = aCampos[x];//Insere os campos num Vetor temporario
                     }
-                    
                     Registro r1 = new Registro(Integer.parseInt(aCamposTEMP[0]), aCamposTEMP[1], Float.parseFloat(aCamposTEMP[2]), aCamposTEMP[3], aCamposTEMP[4], aCamposTEMP[5]); //Cria um novo registro com os campos lidos do .csv
                     rw[i] = r1; // adiciona o novo registro criado no vetor contendo todos os registros
                     i++; //incrementa a variavel de controle
-                    
                 }
-
                 else if (aCampos.length == 6) { //Se tem tamanho 5 é porque o Registro está completo
                     Registro r1 = new Registro(Integer.parseInt(aCampos[0]), aCampos[1], Float.parseFloat(aCampos[2]), aCampos[3], aCampos[4], aCampos[5]); //Cria um novo registro com os campos lidos do .csv
                     rw[i] = r1; // adiciona o novo registro criado no vetor contendo todos os registros
-                    //System.out.println(rw[i].id);
                     i++; //incrementa a variavel de controle
                 }
 
                 linha = leitura.readLine(); //lê a proxima linha
             }
             while (j < qtdOrd ) { //Gera o vetor que será ordenado/ inserido na tabela hash
-                int aleatorio = r.nextInt(50); //Gera um valor aleatório entre 0 e a quantidade de registros - 1
-//                /System.out.println(aleatorio);
+                int aleatorio = r.nextInt(68); //Gera um valor aleatório entre 0 e a quantidade de registros - 1
                 vetor[j] = rw[aleatorio]; //insere no vetor o valor aleatorio corresponde no vetor que contem todos os registros criados
-                //System.out.println(vetor[j].id);
                 j++; // incrementa a variavel de controle
             }
         } catch (FileNotFoundException e) {
@@ -91,6 +83,7 @@ public class Trabalho1 {
         //Faz a ordenacao usando o QuickSort com o pivo sendo a mediana e salva em um .txt de saida com as métricas de desempenho
 //                QuickSortMed quick = new QuickSortMed(vetor);
 //                quick.Organiza();
+//                Da erro de ordenação quando quer, ANALISAR
           
         //Faz a ordenacao usando o QuickSort recursivo e salva em um .txt de saida com as métricas de desempenho
 //                QuickSortRec quick = new QuickSortRec(vetor);

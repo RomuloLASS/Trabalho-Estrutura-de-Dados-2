@@ -14,6 +14,8 @@ public class QuickSortMed extends QuickSortN {
     //Funcao principal da classe, chamada no main
     public void Organiza() throws IOException {
         long tempoInicial = System.currentTimeMillis();
+        Imprime();
+        System.out.println("-----------------");
         quickSort(0, vetor.length - 1);
         long tempoFinal = System.currentTimeMillis();
         Imprime();
