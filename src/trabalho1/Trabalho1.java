@@ -69,8 +69,8 @@ public class Trabalho1 {
         
         //Faz a ordenacao usando o InsertionSort e salva em um .txt de saida com as métricas de desempenho
 //                System.out.println("insertion");
-//                InsertionSort insertion = new InsertionSort(vetor);
-//                insertion.Organiza();
+                InsertionSort insertion = new InsertionSort(vetor);
+                insertion.Organiza();
 
         //Faz a ordenacao usando o HeapSort e salva em um .txt de saida com as métricas de desempenho
 //                HeapSort heap = new HeapSort(vetor);
