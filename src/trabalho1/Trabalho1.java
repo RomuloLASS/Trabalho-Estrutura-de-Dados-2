@@ -65,12 +65,29 @@ public class Trabalho1 {
     public static void main(String[] args) throws FileNotFoundException, IOException {
         
         Random r = new Random();
-        Registro[] vetor = lerArquivo();
+        //Registro[] vetor = lerArquivo();
+        Registro a = new Registro(50, "aaaaa", (float) 10.0, "oahfoueabffoabf", "10", "nouaodwhd");
+        Registro b = new Registro(32, "bbbbb", (float) 10.0, "oahfoueabffoabf", "10", "afoifoiaw");
+        Registro c = new Registro(45, "ccccc", (float) 10.0, "oahfoueabffoabf", "10", "afoiwfjni");
+        Registro d = new Registro(5, "ddddd", (float) 10.0, "oahfoueabffoabf", "10", "ojiajdwpi");
+        Registro e = new Registro(6, "eeeee", (float) 10.0, "oahfoueabffoabf", "10", "kojwolsow");
+        Registro f = new Registro(2, "fffff", (float) 10.0, "oahfoueabffoabf", "10", "bdywtdwft");
+        
+        //Registro[] vetor = {a,b,c,d,e,f};
+        Registro[] vetor = {a,b,c,f,e,d};
+        //vet1=a,b,c,d,e,f
+        //vet2=a,b,c,f,e,d
         
         //Faz a ordenacao usando o InsertionSort e salva em um .txt de saida com as métricas de desempenho
 //                System.out.println("insertion");
-//                InsertionSort insertion = new InsertionSort(vetor);
-//                insertion.Organiza();
+                InsertionSort insertion = new InsertionSort(vetor);
+                insertion.Organiza();
+            //vet1
+            // Parece estar com um erro de 2 comparações a mais
+            // Trocas OK
+            //vet2
+            //
+            
 
         //Faz a ordenacao usando o HeapSort e salva em um .txt de saida com as métricas de desempenho
 //                HeapSort heap = new HeapSort(vetor);
@@ -79,6 +96,8 @@ public class Trabalho1 {
         //Faz a ordenacao usando o MergeSort e salva em um .txt de saida com as métricas de desempenho
 //                MergeSort merge = new MergeSort(vetor);
 //                merge.Organiza();
+                // Comparações 8 - 8
+                // Tracas 8 - 31
 
         //Faz a ordenacao usando o QuickSort com o pivo sendo a mediana e salva em um .txt de saida com as métricas de desempenho
 //                QuickSortMed quick = new QuickSortMed(vetor);
@@ -88,6 +107,8 @@ public class Trabalho1 {
         //Faz a ordenacao usando o QuickSort recursivo e salva em um .txt de saida com as métricas de desempenho
 //                QuickSortRec quick = new QuickSortRec(vetor);
 //                quick.Organiza();
+                // Comparações 12 - 12
+                // Tracas 5 - 4
 
 
         //Faz a ordenacao usando o QuickSort recursivo ou usando o InsertionSort, dependendo do número de chaves no vetor e salva em um .txt de saida com as métricas de desempenho
@@ -114,8 +135,8 @@ public class Trabalho1 {
 //            hash.insere(a);
 //        }
 //        hash.imprimeTabelaHash();
-//
-//            //Encadeamento Separado
+
+            //Faz o Encadeamento Separado
 //            EncadSep l1 = new EncadSep(vetor);
 //            for(int i=0;i<vetor.length;i++){
 //                l1.insere(vetor[i]);

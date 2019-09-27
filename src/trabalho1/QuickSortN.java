@@ -79,7 +79,7 @@ public class QuickSortN {
                 comp++;
                 copia=+3;
             }
-            comp++;
+            //comp++;
         }
         aux[1] = vetor[esq];
         vetor[esq] = vetor[d];

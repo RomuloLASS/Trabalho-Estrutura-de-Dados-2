@@ -58,7 +58,7 @@ public class MergeSort {
     private void merge(int esq, int meio, int dir) {
         for (int i = esq; i <= dir; i++) {
             copiaV[i] = vetor[i];
-            copia++;
+            //copia++;//ACHO Q N PRECISA DESSA COPIA
         }
         int i = esq, j = meio + 1, k = esq;
         while (i <= meio && j <= dir) {
@@ -66,20 +66,21 @@ public class MergeSort {
                 vetor[k] = copiaV[i];
                 i++;
                 copia++;
-                comp++;
+                //comp++;
             } else {
                 vetor[k] = copiaV[j];
                 j++;
                 copia++;
-                comp++;
+                //comp++;
             }
+            comp++;// ESSE COMP N PODE FICAR FORA DO IF E ELSE ?
             k++;
         }
         while (i <= meio) {
             vetor[k] = copiaV[i];
             k++;
             i++;
-            copia++;
+            copia++;//PRECISA DASSA COPIA ??
         }
     }
 

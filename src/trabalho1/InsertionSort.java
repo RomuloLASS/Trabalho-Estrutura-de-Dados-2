@@ -1,5 +1,6 @@
 package trabalho1;
 
+import static com.sun.org.apache.bcel.internal.classfile.Utility.printArray;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
@@ -49,24 +50,45 @@ public class InsertionSort {
         }  
     }
 
-    //Faz a ordenacao do vetor
+//    //Faz a ordenacao do vetor
+//    private void Insertion() {
+//        int j, chave,i;
+//        Registro aux[] = new Registro[vetor.length];
+//        for (i = 1; i < vetor.length; i++) {
+//            chave = vetor[i].id;
+//            copia++;
+//            for (j = i - 1; (j >= 0); j--) {
+//                if(vetor[j].id > chave){
+//                    aux[j] = vetor[j+1];
+//                    vetor[j+1] = vetor[j];
+//                    vetor[j] = aux[j];
+//                    copia++;
+//                    comp++;
+//                } 
+//            }
+//            comp++;
+//            vetor[j + 1].id = chave;
+//            copia++;
+//        }
+//    }
+    
     private void Insertion() {
-        int j, chave,i;
+        int n = vetor.length;  
         Registro aux[] = new Registro[vetor.length];
-        for (i = 1; i < vetor.length; i++) {
-            chave = vetor[i].id;
-            //copia++;
-            for (j = i - 1; (j >= 0) && (vetor[j].id > chave); j--) {
+        for (int i = 1; i < n; i++){   
+            int chave = vetor[i].id;  
+            int j = i-1;  
+            while ( (j > -1) && ( vetor [j].id > chave ) ) 
+            {   
                 aux[j] = vetor[j+1];
                 vetor[j+1] = vetor[j];
                 vetor[j] = aux[j];
                 copia++;
                 comp++;
-            }
-            comp++;
-            vetor[j + 1].id = chave; //EIS O PROBLEMA DESSA DISGRAÇA
-            //copia++;
-        }
-
+                j--;  
+            }  
+            vetor[j+1].id = chave; 
+        }  
     }
+    
 }
