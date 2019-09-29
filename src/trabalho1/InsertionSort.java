@@ -86,7 +86,10 @@ public class InsertionSort {
                 copia++;
                 comp++;
                 j--;  
-            }  
+            }
+            if(j>-1){//Caso a chave seja maior que o valor e não tenha chegado no inicio do vetor
+                comp++;
+            }
             vetor[j+1].id = chave; 
         }  
     }

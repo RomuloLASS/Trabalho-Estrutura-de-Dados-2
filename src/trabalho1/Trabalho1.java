@@ -73,21 +73,15 @@ public class Trabalho1 {
         Registro e = new Registro(6, "eeeee", (float) 10.0, "oahfoueabffoabf", "10", "kojwolsow");
         Registro f = new Registro(2, "fffff", (float) 10.0, "oahfoueabffoabf", "10", "bdywtdwft");
         
-        //Registro[] vetor = {a,b,c,d,e,f};
-        Registro[] vetor = {a,b,c,f,e,d};
+        Registro[] vetor = {a,b,c,d,e,f};
+        //Registro[] vetor = {a,b,c,f,e,d};
         //vet1=a,b,c,d,e,f
         //vet2=a,b,c,f,e,d
         
         //Faz a ordenacao usando o InsertionSort e salva em um .txt de saida com as métricas de desempenho
 //                System.out.println("insertion");
-                InsertionSort insertion = new InsertionSort(vetor);
-                insertion.Organiza();
-            //vet1
-            // Parece estar com um erro de 2 comparações a mais
-            // Trocas OK
-            //vet2
-            //
-            
+//                InsertionSort insertion = new InsertionSort(vetor);
+//                insertion.Organiza();
 
         //Faz a ordenacao usando o HeapSort e salva em um .txt de saida com as métricas de desempenho
 //                HeapSort heap = new HeapSort(vetor);
@@ -97,7 +91,7 @@ public class Trabalho1 {
 //                MergeSort merge = new MergeSort(vetor);
 //                merge.Organiza();
                 // Comparações 8 - 8
-                // Tracas 8 - 31
+                // Tracas 10 - 15
 
         //Faz a ordenacao usando o QuickSort com o pivo sendo a mediana e salva em um .txt de saida com as métricas de desempenho
 //                QuickSortMed quick = new QuickSortMed(vetor);
@@ -105,10 +99,10 @@ public class Trabalho1 {
 //                Da erro de ordenação quando quer, ANALISAR
           
         //Faz a ordenacao usando o QuickSort recursivo e salva em um .txt de saida com as métricas de desempenho
-//                QuickSortRec quick = new QuickSortRec(vetor);
-//                quick.Organiza();
+                QuickSortRec quick = new QuickSortRec(vetor);
+                quick.Organiza();
                 // Comparações 12 - 12
-                // Tracas 5 - 4
+                // Tracas 5 - 5
 
 
         //Faz a ordenacao usando o QuickSort recursivo ou usando o InsertionSort, dependendo do número de chaves no vetor e salva em um .txt de saida com as métricas de desempenho

@@ -86,7 +86,7 @@ public class QuickSortN {
         vetor[d] = aux[1];
         
         vetor[d].id = pivo;
-        copia=+3;
+        //copia=+3;//ESSA CORREÇÂO NÂO FAZ SENTIDO PRA MIM 
         copia++;
         return d;
     }
