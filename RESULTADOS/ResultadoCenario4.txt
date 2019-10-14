@@ -223,62 +223,112 @@ Número de chaves comparadas: 101948
 DUPLO HASH
 N = 1000
 T1--------------
+Número de colisões: 2986
+Número de chaves comparadas: 102986
 ----------------
 T2--------------
+Número de colisões: 4884
+Número de chaves comparadas: 5883
 ----------------
 T3--------------
+Número de colisões: 4627
+Número de chaves comparadas: 5626
 ----------------
 T4--------------
+Número de colisões: 6749
+Número de chaves comparadas: 7747
 ----------------
 T5--------------
+Número de colisões: 4681
+Número de chaves comparadas: 5681
 ----------------
 *************************************
 N = 5000
 T1--------------
+Número de colisões: 17619
+Número de chaves comparadas: 22619
 ----------------
 T2--------------
+Número de colisões: 15855
+Número de chaves comparadas: 20855
 ----------------
 T3--------------
+Número de colisões: 20143
+Número de chaves comparadas: 25143
 ----------------
 T4--------------
+Número de colisões: 16361
+Número de chaves comparadas: 21361
 ----------------
 T5--------------
+Número de colisões: 17175
+Número de chaves comparadas: 22175
 ----------------
 *************************************
 N = 10000
 T1--------------
+Número de colisões: 24306
+Número de chaves comparadas: 34306
 ----------------
 T2--------------
+Número de colisões: 22727
+Número de chaves comparadas: 32727
 ----------------
 T3--------------
+Número de colisões: 26085
+Número de chaves comparadas: 36085
 ----------------
 T4--------------
+Número de colisões: 26137
+Número de chaves comparadas: 36137
 ----------------
 T5--------------
+Número de colisões: 24207
+Número de chaves comparadas: 34207
 ----------------
 *************************************
 N = 50000
 T1--------------
+Número de colisões: 29207
+Número de chaves comparadas: 79207
 ----------------
 T2--------------
+Número de colisões: 31219
+Número de chaves comparadas: 81219
 ----------------
 T3--------------
+Número de colisões: 29352
+Número de chaves comparadas: 79352
 ----------------
 T4--------------
+Número de colisões: 30062
+Número de chaves comparadas: 80062
 ----------------
 T5--------------
+Número de colisões: 32002
+Número de chaves comparadas: 82002
 ----------------
 *************************************
 N = 100000
 T1--------------
+Número de colisões: 2184
+Número de chaves comparadas: 102184
 ----------------
 T2--------------
+Número de colisões: 2786
+Número de chaves comparadas: 102786
 ----------------
 T3--------------
+Número de colisões: 3625
+Número de chaves comparadas: 103625
 ----------------
 T4--------------
+Número de colisões: 2875
+Número de chaves comparadas: 102875
 ----------------
 T5--------------
+Número de colisões: 3264
+Número de chaves comparadas: 103264
 ----------------
 ////////////////////////////////////////////////
 ENCADEAMENTO SEPARADO
