@@ -1,2 +1,2 @@
-Numero de comparações: 23
-Tempo de execução: 0 ms
+Numero de comparações: 337242
+Tempo de execução: 15 ms

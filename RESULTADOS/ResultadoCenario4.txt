@@ -1,62 +1,112 @@
 SONDAGEM LINEAR
 N = 1000
 T1--------------
+Número de colisões: 20121
+Número de chaves comparadas: 21121
 ----------------
 T2--------------
+Número de colisões: 14828
+Número de chaves comparadas: 15828
 ----------------
 T3--------------
+Número de colisões: 19814
+Número de chaves comparadas: 20814
 ----------------
 T4--------------
+Número de colisões: 31055
+Número de chaves comparadas: 32055
 ----------------
 T5--------------
+Número de colisões: 34083
+Número de chaves comparadas: 35083
 ----------------
 *************************************
 N = 5000
 T1--------------
+Número de colisões: 54041
+Número de chaves comparadas: 59041
 ----------------
 T2--------------
+Número de colisões: 60014
+Número de chaves comparadas: 65014
 ----------------
 T3--------------
+Número de colisões: 112487
+Número de chaves comparadas: 117487
 ----------------
 T4--------------
+Número de colisões: 71756
+Número de chaves comparadas: 76756
 ----------------
 T5--------------
+Número de colisões: 89457
+Número de chaves comparadas: 94457
 ----------------
 *************************************
 N = 10000
 T1--------------
+Número de colisões: 89004
+Número de chaves comparadas: 99004
 ----------------
 T2--------------
+Número de colisões: 96543
+Número de chaves comparadas: 106543
 ----------------
 T3--------------
+Número de colisões: 67197
+Número de chaves comparadas: 77197
 ----------------
 T4--------------
+Número de colisões: 147895
+Número de chaves comparadas: 157895
 ----------------
 T5--------------
+Número de colisões: 101278
+Número de chaves comparadas: 111278
 ----------------
 *************************************
 N = 50000
 T1--------------
+Número de colisões: 62250
+Número de chaves comparadas: 112250
 ----------------
 T2--------------
+Número de colisões: 63896
+Número de chaves comparadas: 113896
 ----------------
 T3--------------
+Número de colisões: 46631
+Número de chaves comparadas: 96631
 ----------------
 T4--------------
+Número de colisões: 58490
+Número de chaves comparadas: 108490
 ----------------
 T5--------------
+Número de colisões: 50514
+Número de chaves comparadas: 100514
 ----------------
 *************************************
 N = 100000
 T1--------------
+Número de colisões: 21185
+Número de chaves comparadas: 121185
 ----------------
 T2--------------
+Número de colisões: 20583
+Número de chaves comparadas: 120583
 ----------------
 T3--------------
+Número de colisões: 23026
+Número de chaves comparadas: 123026
 ----------------
 T4--------------
+Número de colisões: 21789
+Número de chaves comparadas: 121789
 ----------------
 T5--------------
+Número de colisões: 26369
+Número de chaves comparadas: 126369
 ----------------
 ////////////////////////////////////////////////
 SONDAGEM QUADRATICA
@@ -234,61 +284,111 @@ T5--------------
 ENCADEAMENTO SEPARADO
 N = 1000
 T1--------------
+Executado em = 0 ms
+O numero de comparações é 3581
 ----------------
 T2--------------
+Executado em = 0 ms
+O numero de comparações é 3626
 ----------------
 T3--------------
+Executado em = 0 ms
+O numero de comparações é 3590
 ----------------
 T4--------------
+Executado em = 0 ms
+O numero de comparações é 3601
 ----------------
 T5--------------
+Executado em = 0 ms
+O numero de comparações é 3576
 ----------------
 *************************************
 N = 5000
 T1--------------
+Executado em = 0 ms
+O numero de comparações é 18127
 ----------------
 T2--------------
+Executado em = 0 ms
+O numero de comparações é 17985
 ----------------
 T3--------------
+Executado em = 0 ms
+O numero de comparações é 18243
 ----------------
 T4--------------
+Executado em = 0 ms
+O numero de comparações é 18027
 ----------------
 T5--------------
+Executado em = 16 ms
+O numero de comparações é 17979
 ----------------
 *************************************
 N = 10000
 T1--------------
+Executado em = 0 ms
+O numero de comparações é 35889
 ----------------
 T2--------------
+Executado em = 0 ms
+O numero de comparações é 36059
 ----------------
 T3--------------
+Executado em = 0 ms
+O numero de comparações é 35873
 ----------------
 T4--------------
+Executado em = 0 ms
+O numero de comparações é 35886
 ----------------
 T5--------------
+Executado em = 0 ms
+O numero de comparações é 35686
 ----------------
 *************************************
 N = 50000
 T1--------------
+Executado em = 0 ms
+O numero de comparações é 36049
 ----------------
 T2--------------
+Executado em = 15 ms
+O numero de comparações é 174289
 ----------------
 T3--------------
+Executado em = 15 ms
+O numero de comparações é 174504
 ----------------
 T4--------------
+Executado em = 16 ms
+O numero de comparações é 174333
 ----------------
 T5--------------
+Executado em = 0 ms
+O numero de comparações é 174422
 ----------------
 *************************************
 N = 100000
 T1--------------
+Executado em = 16 ms
+O numero de comparações é 337025
 ----------------
 T2--------------
+Executado em = 16 ms
+O numero de comparações é 337364
 ----------------
 T3--------------
+Executado em = 16 ms
+O numero de comparações é 337222
 ----------------
 T4--------------
+Executado em = 31 ms
+O numero de comparações é 337346
 ----------------
 T5--------------
+Executado em = 15 ms
+O numero de comparações é 337242
 ----------------
 ////////////////////////////////////////////////
