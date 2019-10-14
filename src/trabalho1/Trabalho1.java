@@ -23,14 +23,23 @@ public class Trabalho1 {
         int qtdOrd = Integer.parseInt(linhaQtd); //Conversão de String para inteiro do valor lido do arquivo "entrada.txt"
         Registro[] vetor = new Registro[qtdOrd]; //Vetor de Registros com o tamanho sendo o valor lido do arquivo "entrada.txt" que será ordenado/ inserido na tabela hash
         try {
-            BufferedReader leitura = new BufferedReader(new FileReader("bgg.csv")); //Leitura do arquivo .csv de Registros
+            BufferedReader leitura = new BufferedReader(new FileReader("bgg-13m-reviews.csv")); //Leitura do arquivo .csv de Registros
             String linha = leitura.readLine(); //Variavel que lê a primeira linha do arquivo .csv
             linha = leitura.readLine();
             while (linha != null) {
 //                        TRATAMENTO DE ENTRADA (,)
                 String[] aCampos = linha.split(VIRGULA); //Vetor que armazena temporariamente cada campo lido do .csv          
                 String[] aCamposTEMP = linha.split(VIRGULA,6); //Vetor Temporario para resolver o problema da virgula no comentario
-                if (aCampos.length > 6) {                        
+                if (aCampos.length > 6) {     
+                    
+                    try{
+                        float x = Float.parseFloat(aCamposTEMP[2]);
+                    }catch(NumberFormatException nfe){
+//                       /nfe.printStackTrace();
+                        aCampos[1] = aCampos[1] + aCampos[2];
+                        aCampos[2] = aCampos[3];       
+                    }
+                    
                     for(int x=3; x<aCampos.length-2; x++){
                         aCampos[3] = aCampos[3] + aCampos[x];//Concatena todos os campos do comentario
                     }
@@ -83,8 +92,8 @@ public class Trabalho1 {
         
         //Faz a ordenacao usando o InsertionSort e salva em um .txt de saida com as métricas de desempenho
 //                System.out.println("insertion");
-//                InsertionSort insertion = new InsertionSort(vetor);
-//                insertion.Organiza();
+                InsertionSort insertion = new InsertionSort(vetor);
+                insertion.Organiza();
 
         //Faz a ordenacao usando o HeapSort e salva em um .txt de saida com as métricas de desempenho
 //                HeapSort heap = new HeapSort(vetor);
