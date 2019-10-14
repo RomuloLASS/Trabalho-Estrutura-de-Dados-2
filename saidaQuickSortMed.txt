@@ -1,3 +1,3 @@
-Numero de comparações: 426836
-Cópias de registro: 1451763
-Tempo de execução: 6219 ms
+Numero de comparações: 2627
+Cópias de registro: 9586
+Tempo de execução: 0 ms

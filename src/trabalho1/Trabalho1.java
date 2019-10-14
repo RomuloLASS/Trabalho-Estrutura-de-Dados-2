@@ -23,7 +23,7 @@ public class Trabalho1 {
         int qtdOrd = Integer.parseInt(linhaQtd); //Conversão de String para inteiro do valor lido do arquivo "entrada.txt"
         Registro[] vetor = new Registro[qtdOrd]; //Vetor de Registros com o tamanho sendo o valor lido do arquivo "entrada.txt" que será ordenado/ inserido na tabela hash
         try {
-            BufferedReader leitura = new BufferedReader(new FileReader("bgg-13m-reviews.csv")); //Leitura do arquivo .csv de Registros
+            BufferedReader leitura = new BufferedReader(new FileReader("bgg.csv")); //Leitura do arquivo .csv de Registros
             String linha = leitura.readLine(); //Variavel que lê a primeira linha do arquivo .csv
             linha = leitura.readLine();
             while (linha != null) {
@@ -92,8 +92,8 @@ public class Trabalho1 {
         
         //Faz a ordenacao usando o InsertionSort e salva em um .txt de saida com as métricas de desempenho
 //                System.out.println("insertion");
-                InsertionSort insertion = new InsertionSort(vetor);
-                insertion.Organiza();
+//                InsertionSort insertion = new InsertionSort(vetor);
+//                insertion.Organiza();
 
         //Faz a ordenacao usando o HeapSort e salva em um .txt de saida com as métricas de desempenho
 //                HeapSort heap = new HeapSort(vetor);
@@ -124,7 +124,7 @@ public class Trabalho1 {
 //          TEM QUE AJUSTAR OS CONTADORES DE COMPARAÇÕES E DE CÓPIAS DE REGISTRO (COMP E CONT)
 
         //Faz o tratamento de colisoes usando a sondagem linear
-//SondagemLinear hash = new SondagemLinear(vetor.length);
+//            SondagemLinear hash = new SondagemLinear(vetor.length);
 //            for(int i=0;i<vetor.length;i++){
 //                int a = vetor[i].id;
 //                hash.insere(a);
@@ -140,10 +140,10 @@ public class Trabalho1 {
 //        hash.imprimeTabelaHash();
 
             //Faz o Encadeamento Separado
-//            EncadSep l1 = new EncadSep(vetor);
-//            for(int i=0;i<vetor.length;i++){
-//                l1.insere(vetor[i]);
-//            }
+            EncadSep l1 = new EncadSep(vetor);
+            for(int i=0;i<vetor.length;i++){
+                l1.insere(vetor[i]);
+            }
 //            l1.Imprime();
         
 
