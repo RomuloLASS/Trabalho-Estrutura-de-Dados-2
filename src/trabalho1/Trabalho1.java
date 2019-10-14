@@ -140,11 +140,19 @@ public class Trabalho1 {
 //        hash.imprimeTabelaHash();
 
             //Faz o Encadeamento Separado
-            EncadSep l1 = new EncadSep(vetor);
-            for(int i=0;i<vetor.length;i++){
-                l1.insere(vetor[i]);
-            }
+//            EncadSep l1 = new EncadSep(vetor);
+//            for(int i=0;i<vetor.length;i++){
+//                l1.insere(vetor[i]);
+//            }
 //            l1.Imprime();
+
+           DuploHash hash = new DuploHash(vetor.length);
+           for(int i = 0; i < vetor.length; i++){
+               int a = vetor[i].id;
+               hash.insere(a);
+           }
+           hash.imprimeTabelaHash();
+            
         
 
 
