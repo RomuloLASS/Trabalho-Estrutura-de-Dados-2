@@ -17,19 +17,20 @@ public class Trabalho1 {
         
         int i = 0, j = 0; //Inicializa as váriaveis de controle com 0
         Random r = new Random(); //Classe para gerar numeros aleatórios
-        Registro[] rw = new Registro[100000]; // Vetor contendo todos os registro lidos do documento .csv
+        Registro[] rw = new Registro[10000000]; // Vetor contendo todos os registro lidos do documento .csv
         BufferedReader ler = new BufferedReader(new FileReader("entrada.txt")); // Arquivo de entrada contendo a quantidade de registros a ser ordenada/ inserida na tabela hash
         String linhaQtd = ler.readLine(); //Variavel para ler o que tem no "entrada.txt"
         int qtdOrd = Integer.parseInt(linhaQtd); //Conversão de String para inteiro do valor lido do arquivo "entrada.txt"
         Registro[] vetor = new Registro[qtdOrd]; //Vetor de Registros com o tamanho sendo o valor lido do arquivo "entrada.txt" que será ordenado/ inserido na tabela hash
         try {
-            BufferedReader leitura = new BufferedReader(new FileReader("test.csv")); //Leitura do arquivo .csv de Registros
+            BufferedReader leitura = new BufferedReader(new FileReader("bgg.csv")); //Leitura do arquivo .csv de Registros
             String linha = leitura.readLine(); //Variavel que lê a primeira linha do arquivo .csv
+            linha = leitura.readLine();
             while (linha != null) {
 //                        TRATAMENTO DE ENTRADA (,)
                 String[] aCampos = linha.split(VIRGULA); //Vetor que armazena temporariamente cada campo lido do .csv          
                 String[] aCamposTEMP = linha.split(VIRGULA,6); //Vetor Temporario para resolver o problema da virgula no comentario
-                if (aCampos.length > 6) {
+                if (aCampos.length > 6) {                        
                     for(int x=3; x<aCampos.length-2; x++){
                         aCampos[3] = aCampos[3] + aCampos[x];//Concatena todos os campos do comentario
                     }
@@ -52,7 +53,7 @@ public class Trabalho1 {
                 linha = leitura.readLine(); //lê a proxima linha
             }
             while (j < qtdOrd ) { //Gera o vetor que será ordenado/ inserido na tabela hash
-                int aleatorio = r.nextInt(68); //Gera um valor aleatório entre 0 e a quantidade de registros - 1
+                int aleatorio = r.nextInt(100000); //Gera um valor aleatório entre 0 e a quantidade de registros - 1
                 vetor[j] = rw[aleatorio]; //insere no vetor o valor aleatorio corresponde no vetor que contem todos os registros criados
                 j++; // incrementa a variavel de controle
             }
@@ -64,16 +65,18 @@ public class Trabalho1 {
     }
     public static void main(String[] args) throws FileNotFoundException, IOException {
         
-        Random r = new Random();
-        //Registro[] vetor = lerArquivo();
-        Registro a = new Registro(50, "aaaaa", (float) 10.0, "oahfoueabffoabf", "10", "nouaodwhd");
-        Registro b = new Registro(32, "bbbbb", (float) 10.0, "oahfoueabffoabf", "10", "afoifoiaw");
-        Registro c = new Registro(45, "ccccc", (float) 10.0, "oahfoueabffoabf", "10", "afoiwfjni");
-        Registro d = new Registro(5, "ddddd", (float) 10.0, "oahfoueabffoabf", "10", "ojiajdwpi");
-        Registro e = new Registro(6, "eeeee", (float) 10.0, "oahfoueabffoabf", "10", "kojwolsow");
-        Registro f = new Registro(2, "fffff", (float) 10.0, "oahfoueabffoabf", "10", "bdywtdwft");
+       // Random r = new Random();
+        Registro[] vetor = lerArquivo();
         
-        Registro[] vetor = {a,b,c,d,e,f};
+        
+//        Registro a = new Registro(50, "aaaaa", (float) 10.0, "oahfoueabffoabf", "10", "nouaodwhd");
+//        Registro b = new Registro(32, "bbbbb", (float) 10.0, "oahfoueabffoabf", "10", "afoifoiaw");
+//        Registro c = new Registro(45, "ccccc", (float) 10.0, "oahfoueabffoabf", "10", "afoiwfjni");
+//        Registro d = new Registro(5, "ddddd", (float) 10.0, "oahfoueabffoabf", "10", "ojiajdwpi");
+//        Registro e = new Registro(6, "eeeee", (float) 10.0, "oahfoueabffoabf", "10", "kojwolsow");
+//        Registro f = new Registro(2, "fffff", (float) 10.0, "oahfoueabffoabf", "10", "bdywtdwft");
+//        
+        //Registro[] vetor = {a,b,c,d,e,f};
         //Registro[] vetor = {a,b,c,f,e,d};
         //vet1=a,b,c,d,e,f
         //vet2=a,b,c,f,e,d
@@ -90,8 +93,6 @@ public class Trabalho1 {
         //Faz a ordenacao usando o MergeSort e salva em um .txt de saida com as métricas de desempenho
 //                MergeSort merge = new MergeSort(vetor);
 //                merge.Organiza();
-                // Comparações 8 - 8
-                // Tracas 10 - 15
 
         //Faz a ordenacao usando o QuickSort com o pivo sendo a mediana e salva em um .txt de saida com as métricas de desempenho
 //                QuickSortMed quick = new QuickSortMed(vetor);
@@ -99,10 +100,9 @@ public class Trabalho1 {
 //                Da erro de ordenação quando quer, ANALISAR
           
         //Faz a ordenacao usando o QuickSort recursivo e salva em um .txt de saida com as métricas de desempenho
-                QuickSortRec quick = new QuickSortRec(vetor);
-                quick.Organiza();
-                // Comparações 12 - 12
-                // Tracas 5 - 5
+//                QuickSortRec quick = new QuickSortRec(vetor);
+//                quick.Organiza();
+
 
 
         //Faz a ordenacao usando o QuickSort recursivo ou usando o InsertionSort, dependendo do número de chaves no vetor e salva em um .txt de saida com as métricas de desempenho
@@ -137,5 +137,10 @@ public class Trabalho1 {
 //            }
 //            l1.Imprime();
         
+
+
+
+
+                
     }
 }

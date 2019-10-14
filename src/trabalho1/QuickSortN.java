@@ -77,7 +77,7 @@ public class QuickSortN {
                 i++;
                 d--;
                 comp++;
-                copia=+3;
+                copia++;
             }
             //comp++;
         }

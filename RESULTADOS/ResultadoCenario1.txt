@@ -1,0 +1,135 @@
+OBS: Só foi avaliado na ordenção do id
+N = 1000
+T1--------------
+Executado em = 0 ms
+O numero de comparações é 8467
+O numero de copias de registro é 2394
+----------------
+T2--------------
+Executado em = 0 ms
+O numero de comparações é 9223
+O numero de copias de registro é 2375
+----------------
+T3--------------
+Executado em = 0 ms
+O numero de comparações é 8810
+O numero de copias de registro é 2390
+----------------
+T4--------------
+Executado em = 0 ms
+O numero de comparações é 9519
+O numero de copias de registro é 2354
+----------------
+T5--------------
+Executado em = 0 ms
+O numero de comparações é 9639
+O numero de copias de registro é 2368
+----------------
+*************************************
+N = 5000
+T1--------------
+Executado em = 16 ms
+O numero de comparações é 55869
+O numero de copias de registro é 14757
+----------------
+T2--------------
+Executado em = 265 ms
+O numero de comparações é 55382
+O numero de copias de registro é 14840
+----------------
+T3--------------
+Executado em = 16 ms
+O numero de comparações é 63734
+O numero de copias de registro é 14522
+----------------
+T4--------------
+Executado em = 16 ms
+O numero de comparações é 60015
+O numero de copias de registro é 14616
+----------------
+T5--------------
+Executado em = 16 ms
+O numero de comparações é 57043
+O numero de copias de registro é 14700
+----------------
+*************************************
+N = 10000
+T1--------------
+Executado em = 297 ms
+O numero de comparações é 129419
+O numero de copias de registro é 31430
+----------------
+T2--------------
+Executado em = 312 ms
+O numero de comparações é 133722
+O numero de copias de registro é 31387
+----------------
+T3--------------
+Executado em = 328 ms
+O numero de comparações é 131871
+O numero de copias de registro é 31515
+----------------
+T4--------------
+Executado em = 312 ms
+O numero de comparações é 137888
+O numero de copias de registro é 31125
+----------------
+T5--------------
+Executado em = 328 ms
+O numero de comparações é 141356
+O numero de copias de registro é 31331
+----------------
+*************************************
+N = 50000
+T1--------------
+Executado em = 1437 ms
+O numero de comparações é 793060
+O numero de copias de registro é 184696
+----------------
+T2--------------
+Executado em = 1390 ms
+O numero de comparações é 772588
+O numero de copias de registro é 185502
+----------------
+T3--------------
+Executado em = 1578 ms
+O numero de comparações é 821539
+O numero de copias de registro é 183670
+----------------
+T4--------------
+Executado em = 1391 ms
+O numero de comparações é 834823
+O numero de copias de registro é 182044
+----------------
+T5--------------
+Executado em = 1359 ms
+O numero de comparações é 760509
+O numero de copias de registro é 185236
+----------------
+*************************************
+N = 100000
+T1--------------
+Executado em = 4328 ms
+O numero de comparações é 1603438
+O numero de copias de registro é 395029
+----------------
+T2--------------
+Executado em = 4374 ms
+O numero de comparações é 1636633
+O numero de copias de registro é 394394
+----------------
+T3--------------
+Executado em = 4406 ms
+O numero de comparações é 1626782
+O numero de copias de registro é 393885
+----------------
+T4--------------
+Executado em = 4250 ms
+O numero de comparações é 1585019
+O numero de copias de registro é 396613
+----------------
+T5--------------
+Executado em = 4641 ms
+O numero de comparações é 1708053
+O numero de copias de registro é 389226
+----------------
