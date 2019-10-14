@@ -1,3 +1,3 @@
-Numero de comparações: 12
-Cópias de registro: 5
-Tempo de execução: 0 ms
+Numero de comparações: 1708053
+Cópias de registro: 389226
+Tempo de execução: 4641 ms

@@ -1,0 +1,5 @@
+Endereçamento – Sondagem Linear------------------OK
+Endereçamento – Sondagem Quadrática--------------OK
+Endereçamento – Duplo Hash-----------------------OK
+Encadeamento Separado----------------------------OK
+Encadeamento Coalescido (sem porão)--------------

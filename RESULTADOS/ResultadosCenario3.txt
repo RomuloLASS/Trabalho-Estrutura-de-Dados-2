@@ -1,0 +1,530 @@
+INSERTION SORT
+N = 1000
+T1--------------
+Executado em = 16 ms
+O numero de comparações é 245667
+O numero de copias de registro é 244674
+----------------
+T2--------------
+Executado em = 15 ms
+O numero de comparações é 253447
+O numero de copias de registro é 252454
+----------------
+T3--------------
+Executado em = 0 ms
+O numero de comparações é 250274
+O numero de copias de registro é 249281
+----------------
+T4--------------
+Executado em = 0 ms
+O numero de comparações é 253177
+O numero de copias de registro é 252188
+----------------
+T5--------------
+Executado em = 15 ms
+O numero de comparações é 247038
+O numero de copias de registro é 246045
+----------------
+*************************************
+N = 5000
+T1--------------
+Executado em = 62 ms
+O numero de comparações é 6235473
+O numero de copias de registro é 6230477
+----------------
+T2--------------
+Executado em = 47 ms
+O numero de comparações é 6186172
+O numero de copias de registro é 6181177
+----------------
+T3--------------
+Executado em = 47 ms
+O numero de comparações é 6344727
+O numero de copias de registro é 6339733
+----------------
+T4--------------
+Executado em = 46 ms
+O numero de comparações é 6258138
+O numero de copias de registro é 6253150
+----------------
+T5--------------
+Executado em = 63 ms
+O numero de comparações é 6279187
+O numero de copias de registro é 6274200
+----------------
+*************************************
+N = 10000
+T1--------------
+Executado em = 171 ms
+O numero de comparações é 24910620
+O numero de copias de registro é 24900627
+----------------
+T2--------------
+Executado em = 172 ms
+O numero de comparações é 25118878
+O numero de copias de registro é 25108886
+----------------
+T3--------------
+Executado em = 188 ms
+O numero de comparações é 25172842
+O numero de copias de registro é 25162846
+----------------
+T4--------------
+Executado em = 172 ms
+O numero de comparações é 24933233
+O numero de copias de registro é 24923240
+----------------
+T5--------------
+Executado em = 172 ms
+O numero de comparações é 25351444
+O numero de copias de registro é 25341458
+----------------
+*************************************
+N = 50000
+T1--------------
+Executado em = 6031 ms
+O numero de comparações é 622255486
+O numero de copias de registro é 622205494
+----------------
+T2--------------
+Executado em = 6000 ms
+O numero de comparações é 628301771
+O numero de copias de registro é 628251783
+----------------
+T3--------------
+Executado em = 6499 ms
+O numero de comparações é 625379820
+O numero de copias de registro é 625329833
+----------------
+T4--------------
+Executado em = 6250 ms
+O numero de comparações é 624142517
+O numero de copias de registro é 624092528
+----------------
+T5--------------
+Executado em = 6093 ms
+O numero de comparações é 624831929
+O numero de copias de registro é 624781942
+----------------
+*************************************
+N = 100000
+T1--------------
+Executado em = 29842 ms
+O numero de comparações é -1791444666
+O numero de copias de registro é -1791544653
+----------------
+T2--------------
+Executado em = 29560 ms
+O numero de comparações é -1791702210
+O numero de copias de registro é -1791802198
+----------------
+T3--------------
+Executado em = 29342 ms
+O numero de comparações é -1803341072
+O numero de copias de registro é -1803441059
+----------------
+T4--------------
+Executado em = 29060 ms
+O numero de comparações é -1802107196
+O numero de copias de registro é -1802207192
+----------------
+T5--------------
+Executado em = 29732 ms
+O numero de comparações é -1799906099
+O numero de copias de registro é -1800006085
+----------------
+/////////////////////////////////////////////////
+MERGE SORT
+N = 1000
+T1--------------
+Executado em = 0 ms
+O numero de comparações é 8729
+O numero de copias de registro é 9377
+----------------
+T2--------------
+Executado em = 0 ms
+O numero de comparações é 8727
+O numero de copias de registro é 9358
+----------------
+T3--------------
+Executado em = 0 ms
+O numero de comparações é 8712
+O numero de copias de registro é 9360
+----------------
+T4--------------
+Executado em = 0 ms
+O numero de comparações é 8692
+O numero de copias de registro é 9405
+----------------
+T5--------------
+Executado em = 0 ms
+O numero de comparações é 8724
+O numero de copias de registro é 9367
+----------------
+*************************************
+N = 5000
+T1--------------
+Executado em = 0 ms
+O numero de comparações é 55159
+O numero de copias de registro é 59075
+----------------
+T2--------------
+Executado em = 0 ms
+O numero de comparações é 55243
+O numero de copias de registro é 59039
+----------------
+T3--------------
+Executado em = 0 ms
+O numero de comparações é 55194
+O numero de copias de registro é 59056
+----------------
+T4--------------
+Executado em = 0 ms
+O numero de comparações é 55231
+O numero de copias de registro é 59048
+----------------
+T5--------------
+Executado em = 16 ms
+O numero de comparações é 55216
+O numero de copias de registro é 59053
+----------------
+*************************************
+N = 10000
+T1--------------
+Executado em = 16 ms
+O numero de comparações é 120568
+O numero de copias de registro é 128184
+----------------
+T2--------------
+Executado em = 0 ms
+O numero de comparações é 120488
+O numero de copias de registro é 128144
+----------------
+T3--------------
+Executado em = 16 ms
+O numero de comparações é 120588
+O numero de copias de registro é 128170
+----------------
+T4--------------
+Executado em = 0 ms
+O numero de comparações é 120562
+O numero de copias de registro é 128081
+----------------
+T5--------------
+Executado em = 0 ms
+O numero de comparações é 120502
+O numero de copias de registro é 128135
+----------------
+*************************************
+N = 50000
+T1--------------
+Executado em = 15 ms
+O numero de comparações é 718403
+O numero de copias de registro é 756847
+----------------
+T2--------------
+Executado em = 31 ms
+O numero de comparações é 718137
+O numero de copias de registro é 756555
+----------------
+T3--------------
+Executado em = 16 ms
+O numero de comparações é 718018
+O numero de copias de registro é 756553
+----------------
+T4--------------
+Executado em = 31 ms
+O numero de comparações é 718198
+O numero de copias de registro é 756855
+----------------
+T5--------------
+Executado em = 31 ms
+O numero de comparações é 718176
+O numero de copias de registro é 756721
+----------------
+*************************************
+N = 100000
+T1--------------
+Executado em = 47 ms
+O numero de comparações é 1536250
+O numero de copias de registro é 1613971
+----------------
+T2--------------
+Executado em = 47 ms
+O numero de comparações é 1536533
+O numero de copias de registro é 1614224
+----------------
+T3--------------
+Executado em = 47 ms
+O numero de comparações é 1536510
+O numero de copias de registro é 1613746
+----------------
+T4--------------
+Executado em = 47 ms
+O numero de comparações é 1536527
+O numero de copias de registro é 1613163
+----------------
+T5--------------
+Executado em = 47 ms
+O numero de comparações é 1536459
+O numero de copias de registro é 1613530
+----------------
+/////////////////////////////////////////////////
+HEAP SORT
+N = 1000
+T1--------------
+Executado em = 0 ms
+O numero de comparações é 19136
+O numero de copias de registro é 19136
+----------------
+T2--------------
+Executado em = 0 ms
+O numero de comparações é 19216
+O numero de copias de registro é 19216
+----------------
+T3--------------
+Executado em = 0 ms
+O numero de comparações é 19192
+O numero de copias de registro é 19192
+----------------
+T4--------------
+Executado em = 0 ms
+O numero de comparações é 19148
+O numero de copias de registro é 19148
+----------------
+T5--------------
+Executado em = 0 ms
+O numero de comparações é 19148
+O numero de copias de registro é 19148
+----------------
+*************************************
+N = 5000
+T1--------------
+Executado em = 16 ms
+O numero de comparações é 119260
+O numero de copias de registro é 119260
+----------------
+T2--------------
+Executado em = 15 ms
+O numero de comparações é 119192
+O numero de copias de registro é 119192
+----------------
+T3--------------
+Executado em = 0 ms
+O numero de comparações é 119086
+O numero de copias de registro é 119086
+----------------
+T4--------------
+Executado em = 0 ms
+O numero de comparações é 119264
+O numero de copias de registro é 119264
+----------------
+T5--------------
+Executado em = 0 ms
+O numero de comparações é 119276
+O numero de copias de registro é 119276
+----------------
+*************************************
+N = 10000
+T1--------------
+Executado em = 0 ms
+O numero de comparações é 258584
+O numero de copias de registro é 258584
+----------------
+T2--------------
+Executado em = 0 ms
+O numero de comparações é 258762
+O numero de copias de registro é 258762
+----------------
+T3--------------
+Executado em = 0 ms
+O numero de comparações é 258348
+O numero de copias de registro é 258348
+----------------
+T4--------------
+Executado em = 0 ms
+O numero de comparações é 258500
+O numero de copias de registro é 258500
+----------------
+T5--------------
+Executado em = 16 ms
+O numero de comparações é 258234
+O numero de copias de registro é 258234
+----------------
+*************************************
+N = 50000
+T1--------------
+Executado em = 31 ms
+O numero de comparações é 1524796
+O numero de copias de registro é 1524796
+----------------
+T2--------------
+Executado em = 31 ms
+O numero de comparações é 1524642
+O numero de copias de registro é 1524642
+----------------
+T3--------------
+Executado em = 15 ms
+O numero de comparações é 1524728
+O numero de copias de registro é 1524728
+----------------
+T4--------------
+Executado em = 32 ms
+O numero de comparações é 1525272
+O numero de copias de registro é 1525272
+----------------
+T5--------------
+Executado em = 31 ms
+O numero de comparações é 1524934
+O numero de copias de registro é 1524934
+----------------
+*************************************
+N = 100000
+T1--------------
+Executado em = 47 ms
+O numero de comparações é 3249258
+O numero de copias de registro é 3249258
+----------------
+T2--------------
+Executado em = 63 ms
+O numero de comparações é 3250440
+O numero de copias de registro é 3250440
+----------------
+T3--------------
+Executado em = 47 ms
+O numero de comparações é 3250290
+O numero de copias de registro é 3250290
+----------------
+T4--------------
+Executado em = 46 ms
+O numero de comparações é 3249478
+O numero de copias de registro é 3249478
+----------------
+T5--------------
+Executado em = 47 ms
+O numero de comparações é 3250432
+O numero de copias de registro é 3250432
+----------------
+/////////////////////////////////////////////////
+MEU SORT
+N = 1000
+T1--------------
+----------------
+T2--------------
+----------------
+T3--------------
+----------------
+T4--------------
+----------------
+T5--------------
+----------------
+*************************************
+N = 5000
+T1--------------
+----------------
+T2--------------
+----------------
+T3--------------
+----------------
+T4--------------
+----------------
+T5--------------
+----------------
+*************************************
+N = 10000
+T1--------------
+----------------
+T2--------------
+----------------
+T3--------------
+----------------
+T4--------------
+----------------
+T5--------------
+----------------
+*************************************
+N = 50000
+T1--------------
+----------------
+T2--------------
+----------------
+T3--------------
+----------------
+T4--------------
+----------------
+T5--------------
+----------------
+*************************************
+N = 100000
+T1--------------
+----------------
+T2--------------
+----------------
+T3--------------
+----------------
+T4--------------
+----------------
+T5--------------
+----------------
+////////////////////////////////////////////////
+QUICK SORT COM BASE NO CENARIO 2
+N = 1000
+T1--------------
+----------------
+T2--------------
+----------------
+T3--------------
+----------------
+T4--------------
+----------------
+T5--------------
+----------------
+*************************************
+N = 5000
+T1--------------
+----------------
+T2--------------
+----------------
+T3--------------
+----------------
+T4--------------
+----------------
+T5--------------
+----------------
+*************************************
+N = 10000
+T1--------------
+----------------
+T2--------------
+----------------
+T3--------------
+----------------
+T4--------------
+----------------
+T5--------------
+----------------
+*************************************
+N = 50000
+T1--------------
+----------------
+T2--------------
+----------------
+T3--------------
+----------------
+T4--------------
+----------------
+T5--------------
+----------------
+*************************************
+N = 100000
+T1--------------
+----------------
+T2--------------
+----------------
+T3--------------
+----------------
+T4--------------
+----------------
+T5--------------
+----------------
+////////////////////////////////////////////////
